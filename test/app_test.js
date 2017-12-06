@@ -6,7 +6,7 @@ describe('The express app', () => {
     reqest(app)
       .get('/api')
       .end((err, response)=>{
-        assert(response.body.hi === 'There');
+        assert(response.body.hi === 'there');
         done();
       });
   });
